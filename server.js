@@ -14,10 +14,10 @@ app.use(cors());
 app.use(express.json());
 
 const reporteRouter = require('./routes/Reporte/endpoints');
-
+const userRouter = require('./routes/User/endpoints');
 
 app.use('/api/v1/reporte', reporteRouter);
-
+app.use('/api/v1/user', userRouter);
 
 module.exports = app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
