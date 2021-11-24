@@ -5,4 +5,5 @@ router.get('/:id', controller.getReporte);
 router.get('/', controller.getAllReportes);
 router.post('/create', controller.createReporte);
 
+
 module.exports = router;
